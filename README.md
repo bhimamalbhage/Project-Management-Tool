@@ -2,7 +2,7 @@
 
 ProjectPilot is a modern, responsive Kanban board application built with React and Tailwind CSS. It provides an intuitive interface for managing projects through a drag-and-drop card system similar to popular project management tools.
 
-![ProjectPilot Screenshot](https://asset.cloudinary.com/dtghboxq8/211f5d83ae79feab684a3969f57370dd)
+![Project Pilot Screenshot](./public/assets/images/project-pilot-ss.png)
 
 ## Features
 
