@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# ProjectPilot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ProjectPilot is a modern, responsive Kanban board application built with React and Tailwind CSS. It provides an intuitive interface for managing projects through a drag-and-drop card system similar to popular project management tools.
 
-## Available Scripts
+![ProjectPilot Screenshot](https://asset.cloudinary.com/dtghboxq8/211f5d83ae79feab684a3969f57370dd)
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Drag and Drop Interface**: Easily move tasks between different stages of your workflow
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
+- **Board Management**: Create, delete, and reorder boards to customize your workflow
+- **Task Cards**: Add detailed cards with descriptions and color-coded labels
+- **Mobile-Optimized**: Full touch support for drag and drop on mobile devices
+- **Modern UI**: Clean, intuitive interface with a gradient color scheme
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- Node.js 14.x or higher
+- npm 6.x or higher
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/project-pilot.git
+cd project-pilot
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Install dependencies:
+```bash
+npm install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open your browser and navigate to `http://localhost:3000`
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+project-pilot/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── AddBoardForm.jsx    # Form for adding new boards
+│   │   ├── AddCardForm.jsx     # Form for adding new cards
+│   │   ├── Board.jsx           # Board component with cards
+│   │   ├── Card.jsx            # Individual card component
+│   │   ├── Header.jsx          # Application header
+│   │   ├── Label.jsx           # Color-coded label component
+│   │   └── useMobileDragDrop.js # Custom hook for mobile drag & drop
+│   ├── App.js                  # Main application component
+│   ├── TrelloClone.jsx         # Core functionality
+│   ├── index.js                # Entry point
+│   └── index.css               # Global styles with Tailwind imports
+└── tailwind.config.js          # Tailwind CSS configuration
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Creating Boards
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Click the "Add Board" button and enter a title for your new board.
 
-## Learn More
+### Adding Cards
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Click the "+ Add a card" button at the bottom of any board
+2. Enter a title and description for your card
+3. Click "Add" to create the card
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Moving Cards
 
-### Code Splitting
+- **Desktop**: Drag and drop cards between boards
+- **Mobile**: Long-press on a card to pick it up, then drag to another board
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Reordering Boards
 
-### Analyzing the Bundle Size
+Use the left and right arrow buttons in the board header to change the order of your boards.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Browser Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+ProjectPilot supports all modern browsers:
 
-### Advanced Configuration
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome for Android)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Roadmap
 
-### Deployment
+- User authentication and accounts
+- Persistent storage (database integration)
+- Card attachments and comments
+- Due dates and reminders
+- Collaborative editing and sharing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgments
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Inspired by Trello and other kanban-style project management tools
+- Built with React and Tailwind CSS
+- SVG icons from Heroicons
